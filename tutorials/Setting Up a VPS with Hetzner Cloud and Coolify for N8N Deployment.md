@@ -74,16 +74,17 @@ Discover how to efficiently set up a virtual private server (VPS) using Hetzner 
       - 'N8N_DIAGNOSTICS_CONFIG_BACKEND=${N8N_DIAGNOSTICS_CONFIG_BACKEND}'
       - 'N8N_ONBOARDING_FLOW_DISABLED=${N8N_ONBOARDING_FLOW_DISABLED}'
     volumes:
-      - 'n8n-data:/home/node/'
-```
+      - 'n8n-data:/home/node/'```
 
 ## Step 6: Set Environment Variables
 
 - After creating the container, navigate to the **Environment Variables** section and enable **Developer Mode** to view and edit all configurable options.
   ![Environment Variables](https://cdn.statically.io/gh/ARHAEEM/blog/assets/1704965377000qtaxfj.png)
 - Utilize the URLs copied from the Postgres & Redis setup to configure the respective environment variables.
+
 ![gh](https://cdn.statically.io/gh/ARHAEEM/blog/assets/1704965971000ximppt.png)
 ![gh](https://cdn.statically.io/gh/ARHAEEM/blog/assets/1704967157000cdm9h4.png)
+
 final Env config will look like this example:
 ```YAML
 DB_POSTGRESDB_DATABASE=postgres
